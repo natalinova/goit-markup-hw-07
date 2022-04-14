@@ -3,15 +3,14 @@
 @mixin color($color) {
   background: $color;
 }
+
 @import './components/basic/null';
 @import './components/basic/visually-hidden';
 @import './components/basic/container';
 
 @import './components/header/header';
-@import './components/header/current';
 @import './components/basic/logo';
 @import './components/portfolio/button-list';
-@import './components/buttons/button-portfolio';
 @import './components/portfolio/portfolio-projects';
 @import './components/hero';
 @import './components/modal/modal-window';
