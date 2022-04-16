@@ -90,7 +90,7 @@ ul {
   padding: 94px 0;
 }
 
-.head-container {
+.header__container {
   display: flex;
   padding-top: 24px;
   padding-bottom: 24px;
@@ -101,11 +101,11 @@ ul {
   border-bottom: 1px solid #ececec;
 }
 
-.current {
+.head__link--current {
   color: var(--brand-color);
 }
 
-.current::after {
+.head__link--current::after {
   position: absolute;
   left: 0;
   content: '';
@@ -193,23 +193,6 @@ ul {
   transition: fill var(--time), color var(--time);
 }
 
-.current {
-  color: var(--brand-color);
-}
-
-.current::after {
-  position: absolute;
-  left: 0;
-  content: '';
-  display: block;
-  background-color: var(--brand-color);
-  width: 100%;
-  height: 4px;
-  border-radius: 2px;
-  bottom: -30px;
-  color: var(--brand-color);
-}
-
 .logo {
   font-family: 'Raleway';
   font-size: 26px;
@@ -218,7 +201,7 @@ ul {
   letter-spacing: 0.03em;
 }
 
-.logo-first {
+.logo__first {
   color: var(--brand-color);
 }
 
@@ -332,9 +315,6 @@ ul {
 .hero {
   padding: 200px 0;
   text-align: center;
-}
-
-.hero__overlay {
   max-width: 1600px;
   height: 600px;
   margin-left: auto;
@@ -607,14 +587,14 @@ ul {
   display: flex;
 }
 
-.ourplus-item {
+.ourplus__item {
   width: 270px;
   margin-left: 30px;
   margin-bottom: 0;
   text-align: justify;
 }
 
-.ourplus-item:first-child {
+.ourplus__item:first-child {
   margin-left: 0;
 }
 
@@ -694,22 +674,22 @@ ul {
   justify-content: center;
 }
 
-.team {
+.section-background {
   background-color: var(--background-first);
 }
 
-.team-item {
+.team__item {
   margin-left: 30px;
   background-color: var(--color-white);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 
-.team-item:first-child {
+.team__item:first-child {
   margin-left: 0;
 }
 
-.team__title {
+.section__title {
   margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
@@ -718,12 +698,12 @@ ul {
   letter-spacing: 0.03em;
 }
 
-.team__list {
+.team {
   display: flex;
   padding: 0;
 }
 
-.team-item__title {
+.team__title {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -731,7 +711,7 @@ ul {
   letter-spacing: 0.03em;
 }
 
-.team-item__position {
+.team__text {
   margin-top: 10px;
   font-size: 16px;
   line-height: 1.19;
@@ -740,19 +720,19 @@ ul {
   letter-spacing: 0.03em;
 }
 
-.team-item__text {
+.team__block {
   padding-top: 30px;
   padding-bottom: 30px;
 }
 
-.team-socials {
+.socials {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-top: 16px;
 }
 
-.social-block__item {
+.socials__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -764,52 +744,52 @@ ul {
   transition: background-color var(--time);
 }
 
-.social-block {
+.socials__link:hover .social-block__icon {
+  fill: var(--color-white);
+}
+
+.socials__link:focus .social-block__icon {
+  fill: var(--color-white);
+}
+
+.socials__link:hover {
+  background-color: var(--brand-color);
+}
+
+.socials__link:focus {
+  background-color: var(--brand-color);
+}
+
+.socials__item {
   margin-right: 10px;
 }
 
-.social-block:last-child {
+.socials__item:last-child {
   margin-right: 0;
 }
 
-.social-block__icon {
+.socials__icon {
   fill: var(--second-grey);
   width: 20px;
   height: 20px;
   transition: fill var(--time);
 }
 
-.social-block__item:hover .social-block__icon {
-  fill: var(--color-white);
-}
-
-.social-block__item:focus .social-block__icon {
-  fill: var(--color-white);
-}
-
-.social-block__item:hover {
-  background-color: var(--brand-color);
-}
-
-.social-block__item:focus {
-  background-color: var(--brand-color);
-}
-
 .clients {
   display: inline-flex;
 }
 
-.clients-item {
+.clients__item {
   width: 170px;
   height: 92px;
   margin-right: 30px;
 }
 
-.clients-item:last-child {
+.clients__item:last-child {
   margin-right: 0;
 }
 
-.clients-item__link {
+.clients__link {
   color: var(--second-grey);
   width: 100%;
   height: 100%;
@@ -822,12 +802,12 @@ ul {
   transition: border-color var(--time), color var(--time);
 }
 
-.clients-item__link:hover, .clients-item__link:focus {
+.clients__link:hover, .clients__link:focus {
   color: var(--brand-color);
   border-color: var(--brand-color);
 }
 
-.clients-item__logo {
+.clients__logo {
   fill: currentColor;
   width: 106px;
   height: 60px;
@@ -883,7 +863,7 @@ ul {
   margin-top: 0;
 }
 
-.social-block__item--dark {
+.socials__link--dark {
   background: rgba(255, 255, 255, 0.1);
   transition: background-color var(--time), fill var(--time);
 }

@@ -27,7 +27,7 @@
     margin-top: 0;
   }
 }
-.social-block__item--dark {
+.socials__link--dark {
   @include color(rgba(255, 255, 255, 0.1));
   transition: background-color var(--time), fill var(--time);
 }
